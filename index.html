@@ -172,31 +172,50 @@ Click the help icon above to learn more.
     background-color: #D4AF37 !important; /* Βάλε εδώ το Hex χρώμα που θες */
     color: #ffffff !important; /* Το χρώμα των γραμμάτων */
 }
-</style>
 
+/* --- ΡΥΘΜΙΣΗ ΓΙΑ HAMBURGER MENU ΚΑΤΩ ΑΠΟ 1210px --- */
+@media (max-width: 1210px) {
+    /* Κρύβει το κανονικό οριζόντιο μενού */
+    .elementor-nav-menu--main {
+        display: none !important;
+    }
+    
+    /* Εμφανίζει το Hamburger Icon (Toggle Button) */
+    .elementor-menu-toggle {
+        display: flex !important;
+        display: -webkit-flex !important;
+    }
+    
+    /* Εξασφαλίζει ότι το dropdown μενού θα λειτουργεί σωστά όταν πατηθεί */
+    .elementor-nav-menu--dropdown {
+        display: none;
+    }
+    .elementor-menu-toggle.elementor-active + .elementor-nav-menu--dropdown {
+        display: block !important;
+    }
+}
 
-<style>
-@media (max-width: 480px) {
-    /* Διορθώνει το 25% width και αναγκάζει το κουμπί να απλωθεί σωστά στο κινητό */
-    .elementor-1334 .elementor-element.elementor-element-1613e88 {
+/* --- ΡΥΘΜΙΣΗ ΓΙΑ ΤΟ ΚΟΥΜΠΙ «ΥΠΟΒΟΛΗ ΑΙΤΗΜΑΤΟΣ» ΣΤΑ ΚΙΝΗΤΑ --- */
+@media (max-width: 768px) {
+    .elementor-element.elementor-element-1613e88 {
         width: 100% !important;
         max-width: 100% !important;
     }
-    
-    .elementor-1334 .elementor-element.elementor-element-1613e88 .elementor-button {
+    .elementor-element.elementor-element-1613e88 .elementor-button {
         white-space: nowrap !important;
-        width: auto !important;
         display: inline-block !important;
         font-size: 14px !important;
         padding: 12px 20px !important;
+        width: auto !important;
     }
 }
 
-/* Εξαναγκάζει την εικόνα Hero να εμφανιστεί */
+/* --- ΕΞΑΝΑΓΚΑΣΜΟΣ ΕΜΦΑΝΙΣΗΣ ΤΗΣ ΕΙΚΟΝΑΣ HERO --- */
 .elementor-motion-effects-layer {
-    background-image: url("./wp-content/uploads/2026/06/g6bd1f8b45e0979493eb3deafa4494b40bedabba2ec3eb8392406309a1b4d5190f4f772f46b235d3b987a40e8b150763f734caf6ea83528c289bced80e51ef68d_1280-6688945.jpg") !important;
+    background-image: url("./wp-content/uploads/2026/06/house.jpg") !important;
 }
 </style>
+
 
 </head>
 
