@@ -176,11 +176,14 @@ Click the help icon above to learn more.
 
 <style>
 @media (max-width: 480px) {
-    /* Εξαναγκάζει το κείμενο του κουμπιού να μένει σε μία γραμμή και μικραίνει τη γραμματοσειρά */
-    .elementor-button-wrapper a.elementor-button {
+    /* Στοχεύει όλα τα Elementor κουμπιά στα κινητά */
+    .elementor-button, 
+    .elementor-button-text,
+    .elementor-button-wrapper a {
         white-space: nowrap !important;
-        font-size: 14px !important;
-        padding: 10px 16px !important;
+        font-size: 13px !important; /* Μικραίνει λίγο η γραμματοσειρά για να χωράει */
+        padding-left: 12px !important; /* Μικραίνουν τα κενά αριστερά-δεξιά */
+        padding-right: 12px !important;
     }
 }
 </style>
