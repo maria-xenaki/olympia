@@ -171,6 +171,26 @@ Click the help icon above to learn more.
     background-color: #D4AF37 !important; /* Βάλε εδώ το Hex χρώμα που θες */
     color: #ffffff !important; /* Το χρώμα των γραμμάτων */
 }
+
+/* --- DESKTOP HEADER: ΜΕΝΟΥ ΚΑΤΩ ΑΠΟ ΤΟΝ ΤΙΤΛΟ ΟΤΑΝ ΣΤΕΝΕΥΕΙ (769px–1210px) --- */
+@media (min-width: 769px) and (max-width: 1210px) {
+    #ast-desktop-header .site-primary-header-wrap .ast-builder-grid-row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+    #ast-desktop-header .site-header-primary-section-left,
+    #ast-desktop-header .site-header-primary-section-right {
+        width: 100% !important;
+    }
+    #ast-desktop-header .site-header-primary-section-right,
+    #ast-desktop-header .ast-builder-menu-1,
+    #ast-desktop-header .main-navigation,
+    #ast-desktop-header .main-header-menu {
+        justify-content: flex-start !important;
+    }
+}
 </style>
 </head>
 
